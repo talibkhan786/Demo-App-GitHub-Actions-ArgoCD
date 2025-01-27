@@ -64,7 +64,7 @@ jobs:
           sed -i "s|image: talibk/demo-app:.*|image: talibk/demo-app:${{ env.VERSION }}|g" deploy/deploy.yaml
           cat deploy/deploy.yaml
 
-      # Update Github
+      # Update Github Repository
       - name: Commit the changes
         run: |
           git config --global user.email "<talibasankhan786@gmail.com>"
